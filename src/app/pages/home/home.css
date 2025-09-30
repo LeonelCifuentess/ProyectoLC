@@ -1,0 +1,28 @@
+/*titulo llamado por id*/
+#title{
+font-size: 35px;
+text-align: center;
+}
+/*1 rem =16px*/
+.card{
+    margin-top: 5rem;
+    
+
+}
+
+.tarjetas{
+   display: flex; 
+  justify-content: center;
+}
+.card{
+    margin: 20px;
+}
+.card-body{
+    display: block;
+    
+    text-align: center;
+}
+.btn{
+    background-color:rgb(95, 58, 45);
+    color: rgb(154, 82, 221);
+}

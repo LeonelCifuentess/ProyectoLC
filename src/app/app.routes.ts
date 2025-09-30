@@ -5,8 +5,21 @@ import { Product } from './pages/product/product';
 import { Contact } from './pages/contact/contact';
 
 export const routes: Routes = [
-    {path: "home", component: Home},
-    {path: "about", component: About},
-    {path:"product", component: Product},
-    {path:"contact", component:Contact}
+    {
+        /*definimos ruta general o raiz ene especifico que
+        nos lleve a la ruta home -> principal*/
+        path:"**", component: Home
+    },
+    {
+        path: "home", component: Home
+    },
+    {
+        path: "about", component: About
+    },
+    {
+        path:"product", component: Product
+    },
+    {
+        path:"contact", component:Contact
+    }
 ];

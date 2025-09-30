@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+/*cambo de estilos en body por ETIQUETA*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Staatliches&display=swap');
+
+body{
+    background-color: rgb(227, 187, 253);
+    color: rgb(97, 55, 33);
+
+   
+}
+*{
+     font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
