@@ -1,26 +1,31 @@
+<h1 class="title">seccion  de productos</h1>
+<!--
+lg ->LARGER
+lg: tamaño de pantalla mas grande ->PC
+
+MD->MEDIA
+md:tamañode pantalla medio-> TABLE
+
+SM->SMALL
+sm:tamaño de pantalla chico-> CELULAR
+-->
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <!--ngFor ->DIRECTIVA que permite iterar colecciones/arreglos funcionalidad simila al "for","forEach"-->
+        <!-- let i-> definicion de la variableque representa 1 elemento de la coleccion "infoTarjeta" (permite iterar)-->
+        <div *ngFor="let i of infoTarjeta"class=" col-6">
             <div class="card" >
-                <img src="../../../assets/puerta5product.jpg" class="card-img-top" alt="...">
+                <img src="{{i.img}} " class="card-img-top" alt="{{i.alt}}">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
+                    <!--interpolacion ->permite acceder a una propiedad esécifica del modelo-->
+                    <h5 class="card-title">{{i.titulo}}</h5>
+                    <p class="card-text">{{i.descripcion}} - {{i.anualpublicacion}}</p>
+
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            <div class="card" >
-                <img src="../../../assets/puerta4product.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+
+
     </div>
 </div>
