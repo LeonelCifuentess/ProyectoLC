@@ -23,38 +23,46 @@ export class Product {
   constructor() {
     this.infoTarjeta = [
       {
-        id:"1T",
-        img:"../../../assets/puerta5product.jpg",
-        alt:"puertaaa",
-        titulo:"puertas",
-        descripcion:"puertas para casa",
-        anualpublicacion:2025
+        id: "1T",
+        img: "../../../assets/puerta5product.jpg",
+        alt: "puertaaa",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
       },
-        {
-        id:"2T",
-        img:"../../../assets/puerta6product.jpg",
-        alt:"puertaaa",
-        titulo:"puertas",
-        descripcion:"puertas para casa",
-        anualpublicacion:2025
+      {
+        id: "2T",
+        img: "../../../assets/puerta6product.jpg",
+        alt: "puertaaa",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
       },
-        {
-        id:"3T",
-        img:"../../../assets/puerta7product.jpg",
-        alt:"puertaaa",
-        titulo:"puertas",
-        descripcion:"puertas para casa",
-        anualpublicacion:2025
+      {
+        id: "3T",
+        img: "../../../assets/puerta7product.jpg",
+        alt: "puertaaa",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
       },
-        {
-        id:"4sT",
-        img:"../../../assets/puerta5product.jpg",
-        alt:"puertaaa",
-        titulo:"puertas",
-        descripcion:"puertas para casa",
-        anualpublicacion:2025
+      {
+        id: "4sT",
+        img: "../../../assets/puerta4product.jpg",
+        alt: "puertaaa",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
       }
 
     ]
+  }
+
+  /*variable para tomar una tarjeta seleccionada */
+  tarjetaSeleccionada: any = null;
+
+  /*recibir elemento seleccionado por parametro y lo asignaa "tarjetaSeleccionada" */
+  verMas(tarjeta: any) {
+    this.tarjetaSeleccionada = tarjeta;
   }
 }

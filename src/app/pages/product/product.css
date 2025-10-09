@@ -8,7 +8,8 @@
 /*pantalla de computadora*/
 @media (min-width: 800px) {
 .card{
-    width: 18rem;
+    width: 100%;
+    height: 100%;
 }
 }
 img{
@@ -19,6 +20,7 @@ img{
 /*pantalla de celular*/
 @media (max-width: 750px){
     .card{
-        width: 9rem;
+        width:100%;
+        
     }
 }
