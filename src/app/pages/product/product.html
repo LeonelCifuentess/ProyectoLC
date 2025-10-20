@@ -13,7 +13,7 @@ sm:tamaño de pantalla chico-> CELULAR
     <div class="row">
         <!--ngFor ->DIRECTIVA que permite iterar colecciones/arreglos funcionalidad simila al "for","forEach"-->
         <!-- let i-> definicion de la variableque representa 1 elemento de la coleccion "infoTarjeta" (permite iterar)-->
-        <div *ngFor="let i of infoTarjeta" class=" col-lg-3 col-md-6 col-sm-12 col-3">
+        <div *ngFor="let i of infoTarjeta" class=" col-lg-3 col-md-6 col-sm-12 col-xs-12 col-3 mb-4">
             <div class="card">
                 <img src="{{i.img}} " class="card-img-top" alt="{{i.alt}}">
                 <div class="card-body">
