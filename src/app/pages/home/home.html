@@ -20,12 +20,13 @@
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="../../../assets/puerta3.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Puerta</h5>
-    <p class="card-text">tipo urbana</p>
-    <a href="#" class="btn">Agregar</a>
-  </div>
+    <img src="../../../assets/puerta3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Puerta</h5>
+        <p class="card-text">tipo urbana</p>
+        <a href="#" class="btn">Agregar</a>
+    </div>
+</div>
 </div>
 
 <div class="container">
@@ -38,7 +39,7 @@
                 <div class="card-body">
                     <!--interpolacion ->permite acceder a una propiedad esécifica del modelo-->
                     <h5 class="card-title">{{i.titulo}}</h5>
-                    <p class="card-text">{{i.titulo}} - {{i.anualCreacion}}</p>
+                    
 
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo"
                     (click)="verMas(i)">
@@ -58,31 +59,28 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{puertaseleccionada?.titulo}}</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                        aria-label="Close">j</button>
                                 </div>
-                                <div class="modal-body">  
+                                <div class="modal-body"> 
+                                    <p>color: {{puertaseleccionada?.color}}</p> 
                                     <div class="modal-imagen">
-                                        <img src="{{infoPuerta?.img}}" >
+                                        <img src="{{puertaseleccionada?.img}}" class="imgg" >
                                     </div>
                                     
                                     <div class="modal-descripcion">
-                                        {{infoPuerta?.anualCreacion}}
-                                        {{infoPuerta?.titulo}}
-                                        {{infoPuerta?.color}}
-                                        {{infoPuerta?.material}}
+                                       <p>Creado en: {{puertaseleccionada?.anualCreacion}}</p>                                         
+                                      <p>Material: {{puertaseleccionada?.material}}</p>  
 
 
                                     </div>                       
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Abrir</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-</div>

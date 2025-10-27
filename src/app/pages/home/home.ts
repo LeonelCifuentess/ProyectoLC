@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Puerta } from '../../puerta';
-import { identifierName } from '@angular/compiler';
+import { Puerta } from '../../models/puerta';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -16,7 +15,7 @@ export class Home {
     this.infoPuerta = [
       {
         id: "P1",
-        img: "../../../assets/product8home",
+        img: "../../../assets/puerta8home.jpg",
         titulo: "puerta para casa",
         color: "Negra y Dorado",
         material: "Aluminio",
@@ -25,7 +24,7 @@ export class Home {
       },
       {
         id: "P2",
-        img: "../../../assets/product9home",
+        img: "../../../assets/puerta9home.jpg",
         titulo: "puerta para bodega",
         color: "Marrón",
         material: "Madera",
@@ -33,7 +32,7 @@ export class Home {
       },
       {
         id: "P3",
-        img: "../../../assets/product10home",
+        img: "../../../assets/puerta10home.jpg",
         titulo: "puerta para casa",
         color: "Blanca",
         material: "Madera",
@@ -41,7 +40,7 @@ export class Home {
       },
       {
         id: "P4",
-        img: "../../../assets/puertas11home",
+        img: "../../../assets/puerta11home.jpg",
         titulo: "puerta para iglesia",
         color: "Marrón",
         material: "Madera",
@@ -51,10 +50,10 @@ export class Home {
 
     ]
   }
-  tarjetaSeleccionada: any = null;
+  puertaseleccionada: any = null;
 
   /*recibir elemento seleccionado por parametro y lo asignaa "tarjetaSeleccionada" */
-  verMas(tarjeta: any) {
-    this.tarjetaSeleccionada = tarjeta;
+  verMas(puerta: any) {
+    this.puertaseleccionada = puerta;
   }
 }
