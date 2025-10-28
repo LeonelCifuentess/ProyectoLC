@@ -14,7 +14,7 @@ export class Home {
   constructor() {
     this.infoPuerta = [
       {
-        id: "P1",
+        id: 1,
         img: "../../../assets/puerta8home.jpg",
         titulo: "puerta para casa",
         color: "Negra y Dorado",
@@ -23,7 +23,7 @@ export class Home {
 
       },
       {
-        id: "P2",
+        id: 2,
         img: "../../../assets/puerta9home.jpg",
         titulo: "puerta para bodega",
         color: "Marrón",
@@ -31,7 +31,7 @@ export class Home {
         anualCreacion: 1900,
       },
       {
-        id: "P3",
+        id: 3,
         img: "../../../assets/puerta10home.jpg",
         titulo: "puerta para casa",
         color: "Blanca",
@@ -39,7 +39,7 @@ export class Home {
         anualCreacion: 2000,
       },
       {
-        id: "P4",
+        id: 4,
         img: "../../../assets/puerta11home.jpg",
         titulo: "puerta para iglesia",
         color: "Marrón",
