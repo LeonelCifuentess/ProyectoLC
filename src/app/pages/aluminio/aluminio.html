@@ -1,0 +1,51 @@
+<p>aluminio works!</p>
+<div class="container">
+    <div class="row">
+        <!--ngFor ->DIRECTIVA que permite iterar colecciones/arreglos funcionalidad simila al "for","forEach"-->
+        <!-- let i-> definicion de la variableque representa 1 elemento de la coleccion "infoTarjeta" (permite iterar)-->
+        <div *ngFor="let i of infoTarjeta" class=" col-lg-3 col-md-6 col-sm-12 col-xs-12 col-3 mb-4">
+            <div class="card">
+                <img src="{{i.img}} " class="card-img-top" alt="{{i.alt}}">
+                <div class="card-body">
+                    <!--interpolacion ->permite acceder a una propiedad esécifica del modelo-->
+                    <h5 class="card-title">{{i.titulo}}</h5>
+                    <p class="card-text">{{i.descripcion}} - {{i.anualpublicacion}}</p>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+                    (click)="verMas(i)">
+                        ver Más
+                    </button>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Modal -->
+                    <div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">  
+                                    <div class="modal-imagen">
+                                        <img src="{{tarjetaSeleccionada?.img}}" alt="{{tarjetaSeleccionada?.alt}}">
+                                    </div>
+                                    
+                                    <div class="modal-descripcion">
+                                        {{tarjetaSeleccionada?.anualpublicacion}}
+                                    </div>                       
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

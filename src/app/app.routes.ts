@@ -3,6 +3,10 @@ import { Home } from './pages/home/home';
 import { About } from './pages/about/about';
 import { Product } from './pages/product/product';
 import { Contact } from './pages/contact/contact';
+import { Registro} from './pages/registro/registro';
+import { Aluminio } from './pages/aluminio/aluminio';
+import { Vidrio } from './pages/vidrio/vidrio';
+import { Metal } from './pages/metal/metal';
 
 export const routes: Routes = [
     {
@@ -21,5 +25,17 @@ export const routes: Routes = [
     },
     {
         path:"contact", component:Contact
+    },
+    {
+        path:"registro",component:Registro
+    },
+    {
+        path:"aluminio",component:Aluminio
+    },
+    {
+        path:"vidrio",component:Vidrio
+    },
+    {
+        path:"metal",component:Metal
     }
 ];
