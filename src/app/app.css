@@ -1,8 +1,11 @@
 .navbar{
-    background-color: rgb(95, 58, 45) !important;
+    background-color: rgb(70, 43, 33) !important;
    
 }
 a{
-    color: rgb(154, 82, 221);
+    color: rgb(216, 185, 248);
     
+}
+.dropdown-menu{
+    background-color: rgb(70, 43, 33) !important;
 }

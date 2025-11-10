@@ -1,6 +1,6 @@
 /* Contenedor principal del formulario */
 .container {
-  background-color: rgb(95, 58, 45);
+   background-color: rgb(70, 43, 33);
   border: 1px solid #dadce0;
   border-radius: 8px;
   padding: 40px 50px;
@@ -13,7 +13,7 @@
 .container h2 {
   font-size: 24px;
   font-weight: 500;
- color: rgb(154, 82, 221);
+ color: rgb(216, 185, 248);
   margin-bottom: 25px;
 }
 
@@ -27,7 +27,7 @@
   
 }
 label{
-color: rgb(154, 82, 221);
+color: rgb(216, 185, 248);
 }
 
 /* Inputs */
@@ -43,13 +43,13 @@ color: rgb(154, 82, 221);
 
 /* Efecto al enfocar el input */
 .form-control:focus {
-  border-color: #1a73e8;
-  box-shadow: 0 0 0 1px #1a73e8;
+  border-color: rgb(216, 185, 248);
+  box-shadow: 0 0 0 1px rgb(216, 185, 248);
 }
 
 /* Botón principal */
 .btn-primary {
-  background-color: #1a73e8;
+  background-color: rgb(174, 122, 225);
   border: none;
   color: white;
   font-weight: 500;
@@ -61,7 +61,7 @@ color: rgb(154, 82, 221);
 }
 
 .btn-primary:hover {
-  background-color: #1669c1;
+  background-color: rgb(174, 94, 254);
 }
 
  /* color mas clarito del boton hasta que este lleno */

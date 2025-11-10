@@ -7,6 +7,7 @@ import { Registro} from './pages/registro/registro';
 import { Aluminio } from './pages/aluminio/aluminio';
 import { Vidrio } from './pages/vidrio/vidrio';
 import { Metal } from './pages/metal/metal';
+import { Ofertas } from './ofertas/ofertas';
 
 export const routes: Routes = [
     {
@@ -37,5 +38,8 @@ export const routes: Routes = [
     },
     {
         path:"metal",component:Metal
+    },
+    {
+        path:"ofertas",component:Ofertas
     }
 ];

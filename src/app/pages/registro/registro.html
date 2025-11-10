@@ -1,32 +1,30 @@
-
-
-<div class="container" >
-    <h2 >Registrate</h2>
+<div class="container">
+    <h2>Registrate</h2>
     <!-- insertoetiqueta "formGroup" para crear
      un formulario y la igualo a su nombre
      [formGroup]<-DIRECTIVA de formularios reactivos
      (ngSubmit)envia informacion cuando usamos alguna opcion -->
-     <form [formGroup]="nuevosesion" (ngSubmit)="crearSesion() ">
+    <form [formGroup]="nuevosesion" (ngSubmit)="crearSesion() ">
         <div class="mb-3">
             <label for="nombre" class="from-label">Nombre</label>
             <!-- formControlName<- atributo que vincule con la informacion de mi propiedad -->
             <input id="nombre" type="text" class="form-control" formControlName="nombre">
         </div>
-            <div class="mb-3">
-            <label for="nombre" class="from-label">Apellido</label>
+        <div class="mb-3">
+            <label for="apellido" class="from-label">Apellido</label>
             <!-- formControlName<- atributo que vincule con la informacion de mi propiedad -->
-            <input id="nombre" type="text" class="form-control" formControlName="apellido">
+            <input id="apellido" type="text" class="form-control" formControlName="apellido">
         </div>
         <div class="mb-3">
-                  <label for="descripcion" class="from-label">Mail</label>
-            <input id="descripcion" type="mail" class="form-control" formControlName="mail">
+            <label for="mail" class="from-label">Mail</label>
+            <input id="mail" type="mail" class="form-control" formControlName="mail">
         </div>
         <div class="mb-3">
-                  <label for="precio" class="from-label">contraseña</label>
-            <input id="precio" type="password" class="form-control" formControlName="contrasena">
+            <label for="contrasena" class="from-label">contraseña</label>
+            <input id="contrasena" type="password" class="form-control" formControlName="contrasena">
         </div>
         <!-- el boton se deshanilita cuando el "nuevoProduccto" no es valido
          ej:falatan campos por rellenar o no cumplen el valor esperado -->
         <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevosesion.valid">Listo</button>
-     </form>
+    </form>
 </div>

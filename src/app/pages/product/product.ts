@@ -22,33 +22,97 @@ export class Product {
   Q 1|°   ° */
   constructor() {
     this.infoTarjeta = [
-      {
-        id: "1T",
-        img: "../../../assets/puerta5product.jpg",
-        alt: "puertaaa",
+     {
+        id: "12T",
+        img: "../../../assets/puerta12aluminio.jpg",
+        alt: "puerta",
         titulo: "puertas",
         descripcion: "puertas para casa",
         anualpublicacion: 2025
       },
       {
-        id: "2T",
-        img: "../../../assets/puerta6product.jpg",
-        alt: "puertaaa",
+        id: "13T",
+        img: "../../../assets/puerta13aluminio.jpg",
+        alt: "puerta",
         titulo: "puertas",
         descripcion: "puertas para casa",
         anualpublicacion: 2025
       },
       {
-        id: "3T",
-        img: "../../../assets/puerta7product.jpg",
-        alt: "puertaaa",
+        id: "14T",
+        img: "../../../assets/puerta14aluminio.webp",
+        alt: "puerta",
         titulo: "puertas",
         descripcion: "puertas para casa",
         anualpublicacion: 2025
       },
       {
-        id: "4sT",
-        img: "../../../assets/puerta4product.jpg",
+        id: "15T",
+        img: "../../../assets/puerta15aluminio.jpg",
+        alt: "puertaaa",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
+      },
+       {
+          id: "20T",
+          img: "../../../assets/puerta16vidrio.webp",
+          alt: "puerta",
+          titulo: "puertas",
+          descripcion: "puertas para casa",
+          anualpublicacion: 2025
+        },
+        {
+          id: "21T",
+          img: "../../../assets/puerta17vidrio.avif",
+          alt: "puerta",
+          titulo: "puertas",
+          descripcion: "puertas para casa",
+          anualpublicacion: 2025
+        },
+        {
+          id: "22T",
+          img: "../../../assets/puerta18vidrio.jpg",
+          alt: "puerta",
+          titulo: "puertas",
+          descripcion: "puertas para casa",
+          anualpublicacion: 2025
+        },
+        {
+          id: "23T",
+          img: "../../../assets/puerta19vidrio.jpg",
+          alt: "puertaaa",
+          titulo: "puertas",
+          descripcion: "puertas para casa",
+          anualpublicacion: 2025
+        },
+        {
+        id: "16T",
+        img: "../../../assets/puerta20metal.jfif",
+        alt: "puerta",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
+      },
+      {
+        id: "17T",
+        img: "../../../assets/puerta21metal.avif",
+        alt: "puerta",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
+      },
+      {
+        id: "18T",
+        img: "../../../assets/puerta22metal.jfif",
+        alt: "puerta",
+        titulo: "puertas",
+        descripcion: "puertas para casa",
+        anualpublicacion: 2025
+      },
+      {
+        id: "19T",
+        img: "../../../assets/puerta23metal.webp",
         alt: "puertaaa",
         titulo: "puertas",
         descripcion: "puertas para casa",

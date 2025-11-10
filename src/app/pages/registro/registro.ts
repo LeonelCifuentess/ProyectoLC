@@ -24,7 +24,7 @@ nuevosesion = new FormGroup({
   nombre: new FormControl('',Validators.required),
  apellido: new FormControl('',Validators.required),
   mail: new FormControl('',Validators.required),
-   constrasena: new FormControl('',Validators.required),
+   contrasena: new FormControl('',Validators.required),
 
 })
 /**
@@ -39,7 +39,7 @@ crearSesion():void {
      nombre: this.nuevosesion.value.nombre!,
      apellido: this.nuevosesion.value.apellido!,
      mail: this.nuevosesion.value.mail!,
-     contrasena: this.nuevosesion.value.constrasena!,
+     contrasena: this.nuevosesion.value.contrasena!,
     }
     this.coleccionsesion.push(nuevoSesion)
 
