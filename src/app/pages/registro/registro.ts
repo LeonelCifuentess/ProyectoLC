@@ -43,6 +43,7 @@ crearSesion():void {
     }
     this.coleccionsesion.push(nuevoSesion)
 
+    alert("¡se creo nuevo usuario exito!\n"+nuevoSesion.mail)
     console.log("sesion agregada :",nuevoSesion);
     console.log("sesiones actuales ",this.coleccionsesion);
 

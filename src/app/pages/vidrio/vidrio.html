@@ -1,4 +1,4 @@
-<h2>Puertas de vidrio</h2>
+<h1 class="title">Puertas de vidrio</h1>
 <div class="container">
     <div class="row">
         <!--ngFor ->DIRECTIVA que permite iterar colecciones/arreglos funcionalidad simila al "for","forEach"-->
@@ -28,7 +28,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">ver más</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -38,7 +38,7 @@
                                     </div>
                                     
                                     <div class="modal-descripcion">
-                                        {{tarjetaSeleccionada?.anualpublicacion}} {{tarjetaSeleccionada?.descripcion}}
+                                        {{tarjetaSeleccionada?.anualpublicacion}} <br> {{tarjetaSeleccionada?.descripcion}}
                                     </div>                       
                                 </div>
                                 <div class="modal-footer">

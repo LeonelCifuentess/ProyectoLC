@@ -1,0 +1,65 @@
+.title{
+ text-align: center;
+}
+
+/* ===== Carrusel General ===== */
+#carouselExampleIndicators {
+  max-width: 500px;          /* Tamaño máximo del carrusel */
+  margin: 40px auto;         /* Centrado y espacio vertical */
+  border-radius: 15px;       /* Bordes redondeados */
+  overflow: hidden;          /* Oculta el exceso de imágenes */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* Sombra elegante */
+  background-color:white;    /* Fondo por si la imagen no carga */
+  text-align: center;
+}
+
+/* ===== Imágenes ===== */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;             /* Altura fija, puedes ajustarla */
+  object-fit: cover;         /* Asegura que las imágenes llenen bien */
+  transition: transform 0.8s ease-in-out; /* Efecto suave al cambiar */
+}
+
+/* Zoom leve al hacer hover */
+.carousel-inner:hover img {
+  transform: scale(1.03);
+}
+
+/* ===== Indicadores (los puntos inferiores) ===== */
+.carousel-indicators [data-bs-target] {
+  background-color: #ccc;     /* Color base */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff;  /* Azul Bootstrap o el color que prefieras */
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ===== Flechas de navegación ===== */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);       /* Hace que sean blancas */
+  width: 40px;
+  height: 40px;
+}
+
+
+
+/* ===== Adaptabilidad ===== */
+@media (max-width: 768px) {
+  #carouselExampleIndicators {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+}
