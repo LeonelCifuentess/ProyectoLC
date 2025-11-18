@@ -3,7 +3,7 @@
 }
 
 /* ===== Carrusel General ===== */
-#carouselExampleIndicators {
+#carouselmetal,#carouselglass,#carouselaluminum {
   max-width: 500px;          /* Tamaño máximo del carrusel */
   margin: 40px auto;         /* Centrado y espacio vertical */
   border-radius: 15px;       /* Bordes redondeados */
@@ -54,7 +54,7 @@
 
 /* ===== Adaptabilidad ===== */
 @media (max-width: 768px) {
-  #carouselExampleIndicators {
+  #carouselmetal,#carouselaluminum,#carouselglass {
     max-width: 100%;
     margin: 20px auto;
   }
@@ -63,3 +63,5 @@
     height: 300px;
   }
 }
+
+

@@ -7,8 +7,8 @@ import { Registro} from './pages/registro/registro';
 import { Aluminio } from './pages/aluminio/aluminio';
 import { Vidrio } from './pages/vidrio/vidrio';
 import { Metal } from './pages/metal/metal';
-import { Ofertas } from './ofertas/ofertas';
-
+import { Ofertas } from './pages/ofertas/ofertas';
+/* definimos  el arreglo de rutas de aplicacion */
 export const routes: Routes = [
     {
         /*definimos ruta general o raiz ene especifico que
